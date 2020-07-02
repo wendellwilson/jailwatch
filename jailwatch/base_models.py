@@ -53,20 +53,22 @@ class Sheriff(models.Model):
 
 class Jail(models.Model):
     name = models.CharField('Jail Name', max_length=50)
-    city = models.CharField('Jail City', max_length=20)
-    capacity = models.PositiveIntegerField('Capacity')
-    phone_number = models.CharField('Main Jail Phone Number', validators=[PHONE_REGEX], max_length=10)
-    search_url = models.URLField('Inmate Search URL')
-    opened_year = models.CharField('Year of Jail Opening', validators=[YEAR_REGEX], max_length=4)
-    renovated_year = models.CharField('Year of Most Recent Renovations', validators=[YEAR_REGEX], max_length=4)
-    daily_pop = models.PositiveIntegerField('Average Daily Population')
-    staff = models.PositiveIntegerField('Number of Staff')
-    gender = models.CharField('Genders in Prison', max_length=1, choices=GENDER_CHOICES)
+    city = models.CharField('Jail City', max_length=20, null=True)
+    capacity = models.PositiveIntegerField('Capacity', null=True)
+    phone_number = models.CharField('Main Jail Phone Number', validators=[PHONE_REGEX], max_length=10, null=True)
+    search_url = models.URLField('Inmate Search URL', null=True)
+    opened_year = models.CharField('Year of Jail Opening', validators=[YEAR_REGEX], max_length=4, null=True)
+    renovated_year = models.CharField('Year of Most Recent Renovations', validators=[YEAR_REGEX], max_length=4, null=True)
+    daily_pop = models.PositiveIntegerField('Average Daily Population', null=True)
+    staff = models.PositiveIntegerField('Number of Staff', null=True)
+    gender = models.CharField('Genders in Prison', max_length=1, choices=GENDER_CHOICES, null=True)
     loc_pop_den = models.CharField('Census Information on Location of Prison Urban vs Rural',
-                                   max_length=2, choices=POPULATION_DENSITY_CHOICES)
-    address = models.CharField('Jail Address', max_length=255)
-    budget = models.PositiveIntegerField('Budget')
-    email = models.EmailField('Jail Office Email')
+                                   max_length=2, choices=POPULATION_DENSITY_CHOICES, null=True)
+    address = models.CharField('Jail Address', max_length=255, null=True)
+    budget = models.PositiveIntegerField('Budget', null=True)
+    email = models.EmailField('Jail Office Email', null=True)
+    location = models.PointField("Lat Long Location of Jail for Map")
+    annex_location = models.PointField("Lat Long Location of Jail Annex for Map")
 
     class Meta:
         abstract = True
@@ -78,7 +80,6 @@ class Jail(models.Model):
 class County(models.Model):
     name = models.CharField('County Name', max_length=20, unique=True)
     fips = models.CharField('FIPS Code', max_length=3)
-    border = models.PolygonField('County Border for Mapping', srid=900914)
 
     class Meta:
         abstract = True

@@ -15,5 +15,6 @@ class NcJail(Jail):
 
 
 class NcCounty(County):
+    border = models.PolygonField('County Border for Mapping')
     jails = models.ManyToManyField(NcJail)
     sheriff = models.OneToOneField(NcSheriff, on_delete=models.SET_NULL, null=True)

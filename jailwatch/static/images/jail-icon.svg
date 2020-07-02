@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44">
+  <defs>
+    <style>.cls-1{fill:#ec7700;}</style>
+  </defs>
+  <title>jail-icon</title>
+  <g id="Layer_2">
+    <g id="Layer_1-2">
+      <path class="cls-1" d="M30.25,32.08H33V12.83H30.25Zm-4.58,0h2.75V12.83H25.67Zm-4.59,0h2.75V12.83H21.08Zm-4.58,0h2.75V12.83H16.5Zm-4.58,0h2.75V12.83H11.92Zm-3.67-22H36.67v2.75H34.83V32.08h1.84v2.75H8.25V32.08h1.83V12.83H8.25ZM22,0A22,22,0,1,0,44,22,22,22,0,0,0,22,0"></path>
+    </g>
+  </g>
+</svg>

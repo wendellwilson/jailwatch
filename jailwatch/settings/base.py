@@ -20,7 +20,7 @@ PROJECT_ROOT = os.path.abspath(os.path.join(BASE_DIR, os.pardir))
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ['DJANGO_SECRET_KEY']
+SECRET_KEY = '3w9l=n3-h8=dc&9ca999i^)zcu%)-+g+rex1s*&!gsbswdmgod'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -38,7 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'nc.apps.NcConfig'
+    'djgeojson',
+    'leaflet',
+    'nc.apps.NcConfig',
 ]
 
 MIDDLEWARE = [
@@ -86,17 +88,17 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'jailwatch',
         'USER': 'jailwatch',
-        'PASSWORD': os.environ['DJANGO_DATABASE_PASSWORD'],
+        'PASSWORD': 'arglbarf',
         'HOST': 'localhost',
-        'PORT':'',
+        'PORT': '5433',
     },
     'jailwatch_nc': {
         'ENGINE': 'django.contrib.gis.db.backends.postgis',
         'NAME': 'jailwatch_nc',
         'USER': 'jailwatch',
-        'PASSWORD': os.environ['DJANGO_DATABASE_PASSWORD'],
+        'PASSWORD': 'arglbarf',
         'HOST': 'localhost',
-        'PORT':'',
+        'PORT': '5433',
     }
 }
 
@@ -120,6 +122,9 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+SERIALIZATION_MODULES = {
+    "geojson": "django.contrib.gis.serializers.geojson",
+}
 
 # Internationalization
 # https://docs.djangoproject.com/en/2.2/topics/i18n/
@@ -150,3 +155,15 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+
+# Additional locations of static files
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'static'),
+)
+
+# List of finder classes that know how to find static files in
+# various locations.
+STATICFILES_FINDERS = (
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+)
