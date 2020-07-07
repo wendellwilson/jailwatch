@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 import scrapy
-from scrapy.selector import Selector
-from scrapy.http import HtmlResponse
 from scrapy.loader import ItemLoader
 from inmatescraper.items import Inmate, Charge
 from inmatescraper import items
@@ -22,7 +20,7 @@ class DurhamSpider(scrapy.Spider):
                if inmate:
                    inmates.append(inmate)
                inmate_loader = ItemLoader(Inmate())
-               inmate_loader.add_value(items.KEY_NAME ,inmate_data.css('a::text').extract())
+               inmate_loader.add_value(items.KEY_NAME, inmate_data.css('a::text').extract())
                inmate = inmate_loader.load_item()
                inmate[items.KEY_CHARGES] = []
             else:

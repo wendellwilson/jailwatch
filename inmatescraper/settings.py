@@ -64,11 +64,10 @@ ROBOTSTXT_OBEY = True
 
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
-ITEM_PIPELINES = {'inmatescraper.pipelines.NcinmatescraperPipeline': 200}
-MONGODB_SERVER = "localhost"
-MONGODB_PORT = 27017
-MONGODB_DB = "ncinmate"
-MONGODB_COLLECTION = "inmates"
+ITEM_PIPELINES = {'inmatescraper.pipelines.MongoDBPipeline': 200}
+MONGODB_URI = "localhost:27017"
+MONGODB_DB = "inmates"
+MONGODB_COLLECTION = "temp_inmates"
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://doc.scrapy.org/en/latest/topics/autothrottle.html
 AUTOTHROTTLE_ENABLED = True

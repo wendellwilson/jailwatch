@@ -10,11 +10,8 @@ import scrapy
 KEY_FIRST_NAME = "first_name"
 KEY_MIDDLE_NAME = "middle_name"
 KEY_LAST_NAME = "last_name"
-KEY_OFFENDER_ID = "offender_id" # Durham and Vine ID
-KEY_PRISONER_ID = "prisoner_id" # Mecklenburg County ID
-KEY_OFFENDER_NUM = "offender_number" # Department Of Public Safety ID
-KEY_AGE = "age"
 KEY_RACE = "race"
+KEY_SEX = "sex"
 KEY_GENDER = "gender"
 KEY_DATE_OF_BIRTH = "date_of_birth"
 KEY_CHARGES = "charges"
@@ -26,7 +23,14 @@ KEY_BOND_TYPE = "bond_type"
 KEY_BOND_AMOUNT = "bond_amount"
 KEY_COURT_DOCKET = "court_docket"
 KEY_DAYS_CHARGE = "days_charge"
-KAY_AGENCY = "agency"
+KEY_AGENCY = "agency"
+KEY_DESC = "desc"
+
+KEY_BOOK_ID = "book_id"
+KEY_OFFENDER_ID = "offender_id" # Durham and Vine ID
+KEY_PRISONER_ID = "prisoner_id" # Mecklenburg County ID
+KEY_OFFENDER_NUM = "offender_number" # Department Of Public Safety ID
+
 
 class Charge(scrapy.Item):
     date_confined = scrapy.Field()
@@ -38,12 +42,14 @@ class Charge(scrapy.Item):
     court_docket = scrapy.Field()
     days_charge = scrapy.Field()
     agency = scrapy.Field()
+    desc = scrapy.Field()
+
 
 class Inmate(scrapy.Item):
     first_name = scrapy.Field()
     middle_name = scrapy.Field()
     last_name = scrapy.Field()
-    id = scrapy.Field()
+    book_id = scrapy.Field()
     charges = scrapy.Field()
     race = scrapy.Field()
     gender = scrapy.Field()
