@@ -1,0 +1,76 @@
+{ "name": "Alamance County Detention Center", "location": { "type": "Point", "coordinates": [ -79.40339, 36.06844 ] } }
+{ "name": "Alamance County Detention Center", "location": { "type": "Point", "coordinates": [ -79.40339, 36.06844 ] } }
+{ "name": "Albemarle District Jail", "location": { "type": "Point", "coordinates": [ -76.30674, 36.35724 ] } }
+{ "name": "Anson County Jail", "location": { "type": "Point", "coordinates": [ -80.07584, 34.96702 ] } }
+{ "name": "Ashe County Detention", "location": { "type": "Point", "coordinates": [ -81.46034, 36.41883 ] } }
+{ "name": "Beaufort County Jailer", "location": { "type": "Point", "coordinates": [ -77.05484, 35.54378 ] } }
+{ "name": "Bladen County Detention Center", "location": { "type": "Point", "coordinates": [ -78.60872, 34.61538 ] } }
+{ "name": "Buncombe County Detention Center", "location": { "type": "Point", "coordinates": [ -82.54774, 35.59579 ] } }
+{ "name": "Burke Catawba District Confinement Facility", "location": { "type": "Point", "coordinates": [ -81.68057, 35.72048 ] } }
+{ "name": "Burke County Jail", "location": { "type": "Point", "coordinates": [ -81.68528, 35.74562 ] } }
+{ "name": "Cabarrus County Jail", "location": { "type": "Point", "coordinates": [ -80.57794, 35.40926 ] } }
+{ "name": "Caldwell County Jail", "location": { "type": "Point", "coordinates": [ -81.57087, 35.89138 ] } }
+{ "name": "Carteret Correctional Center", "location": { "type": "Point", "coordinates": [ -76.84568, 34.78133 ] } }
+{ "name": "Carteret County Detention Center", "location": { "type": "Point", "coordinates": [ -76.66191, 34.71945 ] } }
+{ "name": "Caswell Correctional Center", "location": { "type": "Point", "coordinates": [ -79.34211, 36.41882 ] } }
+{ "name": "Chatham County Detention Center", "location": { "type": "Point", "coordinates": [ -79.26527, 35.74089 ] } }
+{ "name": "Cherokee County Detention Center", "location": { "type": "Point", "coordinates": [ -84.02877, 35.10167 ] } }
+{ "name": "Chowan County Detention Facility", "location": { "type": "Point", "coordinates": [ -76.60717, 36.06041 ] } }
+{ "name": "Cleveland County Detention Center", "location": { "type": "Point", "coordinates": [ -81.53595, 35.29081 ] } }
+{ "name": "Columbus County Detention Center", "location": { "type": "Point", "coordinates": [ -78.71919, 34.33673 ] } }
+{ "name": "Craggy Correctional Center", "location": { "type": "Point", "coordinates": [ -82.61561, 35.66304 ] } }
+{ "name": "Craven County Jail", "location": { "type": "Point", "coordinates": [ -77.18294, 35.13286 ] } }
+{ "name": "Cumberland County Jail", "location": { "type": "Point", "coordinates": [ -78.8804, 35.04984 ] } }
+{ "name": "Currituck County Detention Center", "location": { "type": "Point", "coordinates": [ -76.0192, 36.39898 ] } }
+{ "name": "Dare County Detention Center", "location": { "type": "Point", "coordinates": [ -75.69005, 35.91827 ] } }
+{ "name": "Davidson Correctional Center", "location": { "type": "Point", "coordinates": [ -80.22936, 35.81512 ] } }
+{ "name": "Davidson County Jail", "location": { "type": "Point", "coordinates": [ -80.25479, 35.82587 ] } }
+{ "name": "Davie County Detention Center", "location": { "type": "Point", "coordinates": [ -80.59296, 35.88205 ] } }
+{ "name": "Duplin County Jail", "location": { "type": "Point", "coordinates": [ -77.96208, 34.96349 ] } }
+{ "name": "Durham Correctional Center", "location": { "type": "Point", "coordinates": [ -78.92554, 36.06545 ] } }
+{ "name": "Durham County Detention Facility", "location": { "type": "Point", "coordinates": [ -78.90142, 35.99316 ] } }
+{ "name": "Edgecombe County Jail", "location": { "type": "Point", "coordinates": [ -77.58903, 35.91055 ] } }
+{ "name": "Forsyth County Detention Center", "location": { "type": "Point", "coordinates": [ -80.24232, 36.09692 ] } }
+{ "name": "Franklin County Jail", "location": { "type": "Point", "coordinates": [ -78.31948, 36.09443 ] } }
+{ "name": "Gaston County Jail", "location": { "type": "Point", "coordinates": [ -81.18353, 35.26753 ] } }
+{ "name": "Gaston County Jail Annex", "location": { "type": "Point", "coordinates": [ -81.18275, 35.26807 ] } }
+{ "name": "Graham County Jail", "location": { "type": "Point", "coordinates": [ -83.80646, 35.32307 ] } }
+{ "name": "Granville County Jail", "location": { "type": "Point", "coordinates": [ -78.58786, 36.31249 ] } }
+{ "name": "Guilford County Jail", "location": { "type": "Point", "coordinates": [ -79.99766, 35.95507 ] } }
+{ "name": "Halifax County Jail", "location": { "type": "Point", "coordinates": [ -77.58921, 36.32041 ] } }
+{ "name": "Haywood County Detention Center", "location": { "type": "Point", "coordinates": [ -83.00548, 35.47144 ] } }
+{ "name": "Hertford County Jail", "location": { "type": "Point", "coordinates": [ -76.93494, 36.39771 ] } }
+{ "name": "Iredell County Detention Center", "location": { "type": "Point", "coordinates": [ -80.88565, 35.78806 ] } }
+{ "name": "Jackson County Jail", "location": { "type": "Point", "coordinates": [ -83.22629, 35.37898 ] } }
+{ "name": "Jackson County Jail", "location": { "type": "Point", "coordinates": [ -83.22629, 35.37898 ] } }
+{ "name": "Jail Annex", "location": { "type": "Point", "coordinates": [ -81.54428, 35.28695 ] } }
+{ "name": "Lenoir County Jail", "location": { "type": "Point", "coordinates": [ -77.5799, 35.25922 ] } }
+{ "name": "Lincoln Correctional Center", "location": { "type": "Point", "coordinates": [ -81.23597, 35.48386 ] } }
+{ "name": "Lincoln County Detention Center", "location": { "type": "Point", "coordinates": [ -81.23751, 35.48922 ] } }
+{ "name": "Macon County Detention Center", "location": { "type": "Point", "coordinates": [ -83.37186, 35.19778 ] } }
+{ "name": "McDowell County Jail", "location": { "type": "Point", "coordinates": [ -82.0313, 35.6639 ] } }
+{ "name": "Moore County Detention Center", "location": { "type": "Point", "coordinates": [ -79.41857, 35.34334 ] } }
+{ "name": "New Hanover Correctional Center", "location": { "type": "Point", "coordinates": [ -77.92319, 34.26695 ] } }
+{ "name": "North Piedmont Correctional for Women", "location": { "type": "Point", "coordinates": [ -80.23213, 35.81392 ] } }
+{ "name": "Onslow County Jail", "location": { "type": "Point", "coordinates": [ -77.4312, 34.7517 ] } }
+{ "name": "Orange County Jail", "location": { "type": "Point", "coordinates": [ -79.09877, 36.07477 ] } }
+{ "name": "Paytel-Lee County Jail", "location": { "type": "Point", "coordinates": [ -79.16349, 35.46773 ] } }
+{ "name": "Pender Correctional Center", "location": { "type": "Point", "coordinates": [ -77.93957, 34.5545 ] } }
+{ "name": "Person County Jail", "location": { "type": "Point", "coordinates": [ -78.98549, 36.39508 ] } }
+{ "name": "Pitt County Detention Center", "location": { "type": "Point", "coordinates": [ -77.36124, 35.64248 ] } }
+{ "name": "Robeson County Jail", "location": { "type": "Point", "coordinates": [ -79.05181, 34.58511 ] } }
+{ "name": "Rockingham County Jail", "location": { "type": "Point", "coordinates": [ -79.74752, 36.38575 ] } }
+{ "name": "Rowan County Detention Annex", "location": { "type": "Point", "coordinates": [ -80.53985, 35.61763 ] } }
+{ "name": "Rowan County Detention Center", "location": { "type": "Point", "coordinates": [ -80.46863, 35.66966 ] } }
+{ "name": "Rutherford County Jail", "location": { "type": "Point", "coordinates": [ -81.95782, 35.3697 ] } }
+{ "name": "Sampson County Jail", "location": { "type": "Point", "coordinates": [ -78.30286, 34.99249 ] } }
+{ "name": "Scotland County Jail", "location": { "type": "Point", "coordinates": [ -79.45926, 34.7752 ] } }
+{ "name": "Sullivan County Jail", "location": { "type": "Point", "coordinates": [ -82.32049, 36.53642 ] } }
+{ "name": "Sullivan County Jail", "location": { "type": "Point", "coordinates": [ -82.32049, 36.53642 ] } }
+{ "name": "Surry County Jail", "location": { "type": "Point", "coordinates": [ -80.72252, 36.39758 ] } }
+{ "name": "Transylvania County Jail", "location": { "type": "Point", "coordinates": [ -82.71355, 35.26411 ] } }
+{ "name": "Washington County Detention", "location": { "type": "Point", "coordinates": [ -76.74872, 35.86693 ] } }
+{ "name": "Watauga County Detention Center", "location": { "type": "Point", "coordinates": [ -81.70688, 36.2208 ] } }
+{ "name": "Wayne County Jail", "location": { "type": "Point", "coordinates": [ -77.99451, 35.38147 ] } }
+{ "name": "Wilkes County Jail", "location": { "type": "Point", "coordinates": [ -81.14876, 36.14061 ] } }
+{ "name": "Yadkin County Detention Center", "location": { "type": "Point", "coordinates": [ -80.65759, 36.13528 ] } }
