@@ -23,12 +23,13 @@ class P2CSpider(scrapy.Spider):
                           items.KEY_AGENCY: 'disp_agency',}
     inmate_map = {}
     charge_map = {}
+    inmate_data = {}
 
-    def __init__(self, start_urls, inmate_map=DEFAULT_INMATE_MAP, charge_map=DEFAULT_CHARGE_MAP, **kwargs):
+    def __init__(self, start_urls, inmate_map={}, charge_map={}, inmate_data={}, **kwargs):
         self.start_urls = start_urls
-        self.inmate_map = inmate_map
-        self.charge_map = charge_map
-        ##TODO take input state and county
+        self.inmate_data = inmate_data
+        self.inmate_map = {**self.DEFAULT_INMATE_MAP, **inmate_map}
+        self.charge_map = {**self.DEFAULT_CHARGE_MAP, **charge_map}
         super().__init__(**kwargs)
 
     def start_requests(self):
@@ -36,23 +37,26 @@ class P2CSpider(scrapy.Spider):
             post_url = url + self.QUERY_URL_SUFFIX
             ##TODO figure out required headers
             yield scrapy.FormRequest(dont_filter=True,
-                                     formdata=self.P2C_DEFAULT_FORMDATA,
+                                     formdata=self.DEFAULT_FORMDATA,
                                      url=post_url,)
 
     def parse(self, response):
-        jsonresponse = json.loads(response.text)
+        json_response = json.loads(response.text)
         inmates = []
-        for inmate_data in jsonresponse['rows']:
+        for inmate_data in json_response['rows']:
             inmate_loader = ItemLoader(items.Inmate())
 
-            for key, value in self.inmate_map:
+            for key, value in self.inmate_map.items():
                 inmate_loader.add_value(key, inmate_data[value])
+
+            for key, value in self.inmate_data.items():
+                inmate_loader.add_value(key, value)
 
             inmate = inmate_loader.load_item()
             inmate[items.KEY_CHARGES] = []
             charge_loader = ItemLoader(items.Charge())
 
-            for key, value in self.charge_map:
+            for key, value in self.charge_map.items():
                 charge_loader.add_value(key, inmate_data[value])
 
             inmate[items.KEY_CHARGES].append(charge_loader.load_item())

@@ -1,0 +1,4 @@
+Importing intial jail data for project setup
+mongoimport --db jailwatch --collection jail --drop --file jails.json
+Import nc map
+mongoimport --db jailwatch --collection county --drop --file nccounties.json

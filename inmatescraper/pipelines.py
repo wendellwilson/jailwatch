@@ -20,7 +20,7 @@ class MongoDBPipeline:
         ## pull in information from settings.py
         return cls(
             mongo_uri=crawler.settings.get('MONGODB_URI'),
-            mongo_db=crawler.settings.get('MONGODB_DATABASE'),
+            mongo_db=crawler.settings.get('MONGODB_DB'),
             mongo_col=crawler.settings.get('MONGODB_COLLECTION')
         )
 
@@ -36,6 +36,6 @@ class MongoDBPipeline:
 
     def process_item(self, item, spider):
         ## how to handle each post
-        ##self.db[self.mongo_col].insert(dict(item))
-        ##logging.debug("Post added to MongoDB")
+        self.db[self.mongo_col].insert(dict(item))
+        logging.debug("Post added to MongoDB")
         return item

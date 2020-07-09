@@ -25,6 +25,8 @@ KEY_COURT_DOCKET = "court_docket"
 KEY_DAYS_CHARGE = "days_charge"
 KEY_AGENCY = "agency"
 KEY_DESC = "desc"
+KEY_STATE = "state"
+KEY_COUNTY = "county"
 
 KEY_BOOK_ID = "book_id"
 KEY_OFFENDER_ID = "offender_id" # Durham and Vine ID
@@ -44,7 +46,6 @@ class Charge(scrapy.Item):
     agency = scrapy.Field()
     desc = scrapy.Field()
 
-
 class Inmate(scrapy.Item):
     first_name = scrapy.Field()
     middle_name = scrapy.Field()
@@ -54,3 +55,5 @@ class Inmate(scrapy.Item):
     race = scrapy.Field()
     gender = scrapy.Field()
     date_of_birth = scrapy.Field()
+    state = scrapy.Field()
+    county = scrapy.Field()
