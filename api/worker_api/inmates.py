@@ -1,12 +1,12 @@
-from flask_restx import Resource
+from flask_restx import Resource, Namespace
 
 from api.models import Inmate
 from api.shared.schemas import InmateSchema
-from . import worker_api
 
 inmate_schema = InmateSchema()
+inmate_ns = Namespace('inmate')
 
-@worker_api.route('/inmate')
+@inmate_ns.route('/')
 class Inmate(Resource):
     def put():
         inmate = None

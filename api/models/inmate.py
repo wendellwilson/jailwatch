@@ -1,10 +1,9 @@
-from sqlalchemy import Column, Integer, String, Enum, Date
-from sqlalchemy.orm import relationship
+from sqlalchemy import Column, Integer, String, Enum, Date, ForeignKey
 
 from api.shared.constants import Gender, Race
 from api import db
 
-class Inmate (db.Model):
+class Inmate(db.Model):
     __tablename__ = 'inmates'
 
     id = Column(Integer, primary_key=True)
@@ -12,17 +11,17 @@ class Inmate (db.Model):
     middle_name = Column(Date)
     last_name = Column(String)
     book_id = Column(String)
-    charges = relationship(
-        "Charge", back_populates="inmate", cascade="all, delete-orphan"
+    charges = db.relationship(
+        'Charge', back_populates='inmate'
     )
-    race = Column('value', Enum(Race))
-    gender = Column('value', Enum(Gender))
+    race = Column(Enum(Race))
+    gender = Column(Enum(Gender))
     date_of_birth = Column(Date)
 
     def __repr__(self) -> str:
         return f'Inmate(id={self.id!r}, first_name={self.first_name!r}, last_name={self.last_name!r}, middle_name={self.middle_name!r})'
 
-class Charge (db.Model):
+class Charge(db.Model):
     __tablename__ = 'charges'
 
     id = Column(Integer, primary_key=True)
@@ -36,7 +35,8 @@ class Charge (db.Model):
     days_charge = Column(Integer)
     agency = Column(String)
     description = Column(String)
-    inmate = relationship("Inmate", back_populates="charges")
+    inmate_id = Column(Integer, ForeignKey('inmates.id'))
+    inmate = db.relationship('Inmate', back_populates='charges')
 
     def __repr__(self) -> str:
         return f'Charge(id={self.id!r})'

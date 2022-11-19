@@ -1,13 +1,13 @@
-from flask_restx import Resource
+from flask_restx import Resource, Namespace
 
 from api.models import Jail
 from api.shared.schemas import JailSchema
 from api.shared.constants import State
-from . import client_api
 
 jail_schema = JailSchema()
+jails_ns = Namespace('jails')
 
-@client_api.route('/jails/<region>')
+@jails_ns.route('/<region>')
 class JailsRegion(Resource):
     def get(region):
         jails = Jail.query.all()

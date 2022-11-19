@@ -1,12 +1,12 @@
-from flask_restx import Resource
+from flask_restx import Resource, Namespace
 
 from api.models import Charge
 from api.shared.schemas import ChargeSchema
-from . import worker_api
 
 charge_schema = ChargeSchema()
+charge_ns = Namespace('charge')
 
-@worker_api.route('/charge')
+@charge_ns.route('/')
 class Charge(Resource):
     def put():
         charge = None

@@ -12,8 +12,11 @@ flask-sqlalchemy = "*"
 flask-marshmallow = "*"
 marshmallow-sqlalchemy = "*"
 flask-restx = "*"
+psycopg2-binary = "*"
 
 [dev-packages]
+python-dotenv = "*"
+pytest = "*"
 
 [requires]
 python_version = "3.9"

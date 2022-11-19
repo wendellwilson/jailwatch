@@ -1,1 +1,1 @@
-from .api import client_api, client_blueprint
+from .api import client_blueprint

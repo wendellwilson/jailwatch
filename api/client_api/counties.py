@@ -1,13 +1,13 @@
-from flask_restx import Resource
+from flask_restx import Resource, Namespace
 
 from api.models import County
 from api.shared.schemas import CountySchema
 from api.shared.constants import State
-from . import client_api
 
 county_schema = CountySchema()
+counties_ns = Namespace('counties')
 
-@client_api.route('/counties/<region>')
+@counties_ns.route('/<region>')
 class CountiesRegion(Resource):
     def get(region):
         counties = County.query.all()
