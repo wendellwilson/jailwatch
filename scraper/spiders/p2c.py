@@ -1,6 +1,6 @@
 import scrapy
 from scrapy.loader import ItemLoader
-from inmatescraper import items
+from scraper import items
 import json
 
 
