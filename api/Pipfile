@@ -5,8 +5,12 @@ name = "pypi"
 
 [packages]
 flask = "*"
+sqlalchemy = "*"
+alembic = "*"
+geoalchemy2 = "*"
 
 [dev-packages]
 
 [requires]
-python_version = "3.10"
+python_version = "3.9"
+python_full_version = "3.9.15"
