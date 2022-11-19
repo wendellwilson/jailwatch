@@ -1,11 +1,11 @@
-from sqlalchemy.orm import declarative_base
 from sqlalchemy import Column, ForeignKey, Table
+from flask_sqlalchemy import SQLAlchemy
 
-Base = declarative_base()
+db = SQLAlchemy()
 
 counties_jails = Table(
     "countis_jails",
-    Base.metadata,
+    db.metadata,
     Column("county_id", ForeignKey("counties.id"), primary_key=True),
     Column("jail_id", ForeignKey("jails.id"), primary_key=True),
 )

@@ -1,10 +1,11 @@
 from sqlalchemy import Column, Integer, String, ForeignKey, Enum
 from sqlalchemy.orm import relationship
 from geoalchemy2 import Geometry
-from base import Base, counties_jails
-from api.constants import State
+from .shared import counties_jails,db
+from api.shared.constants import State 
 
-class Jail (Base):
+
+class Jail (db.Model):
     __tablename__ = "jails"
 
     id = Column(Integer, primary_key=True)

@@ -1,9 +1,9 @@
 from sqlalchemy import Column, Integer, String, Enum, Date
 from sqlalchemy.orm import relationship
-from base import Base
-from api.constants import Gender, Race
+from api.shared.constants import Gender, Race
+from .shared import db
 
-class Inmate (Base):
+class Inmate (db.Model):
     __tablename__ = 'inmates'
 
     id = Column(Integer, primary_key=True)
@@ -21,7 +21,7 @@ class Inmate (Base):
     def __repr__(self) -> str:
         return f'Inmate(id={self.id!r}, first_name={self.first_name!r}, last_name={self.last_name!r}, middle_name={self.middle_name!r})'
 
-class Charge (Base):
+class Charge (db.Model):
     __tablename__ = 'charges'
 
     id = Column(Integer, primary_key=True)
