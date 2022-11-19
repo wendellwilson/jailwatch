@@ -1,8 +1,10 @@
 from sqlalchemy import Column, Integer, String, Enum
 from sqlalchemy.orm import relationship
 from geoalchemy2 import Geometry
-from .shared import counties_jails, db
+
+from .shared import counties_jails
 from api.shared.constants import State
+from api import db
 
 class County (db.Model):
     __tablename__ = 'counties'

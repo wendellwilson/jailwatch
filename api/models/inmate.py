@@ -1,7 +1,8 @@
 from sqlalchemy import Column, Integer, String, Enum, Date
 from sqlalchemy.orm import relationship
+
 from api.shared.constants import Gender, Race
-from .shared import db
+from api import db
 
 class Inmate (db.Model):
     __tablename__ = 'inmates'

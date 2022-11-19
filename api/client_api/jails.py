@@ -1,10 +1,14 @@
+from flask_restx import Resource
+
 from api.models import Jail
-from flask import Response, Blueprint
+from api.shared.schemas import JailSchema
 from api.shared.constants import State
+from . import client_api
 
-jails_blueprint = Blueprint('jails', __name__)
+jail_schema = JailSchema()
 
-@jails_blueprint.route('/<state>')
-def get_state_jails(state):
-    jails = Jail.objects.to_json()
-    return Response(jails, mimetype="application/json", status=200)
+@client_api.route('/jails/<region>')
+class JailsRegion(Resource):
+    def get(region):
+        jails = Jail.query.all()
+        return jail_schema.dump(jails)

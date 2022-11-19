@@ -1,7 +1,9 @@
 from sqlalchemy import Column, Integer, String, ForeignKey, Enum
 from sqlalchemy.orm import relationship
 from geoalchemy2 import Geometry
-from .shared import counties_jails,db
+
+from .shared import counties_jails
+from api import db
 from api.shared.constants import State 
 
 

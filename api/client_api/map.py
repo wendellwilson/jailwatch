@@ -1,10 +1,14 @@
+from flask_restx import Resource
+
 from api.models import County
-from flask import Response, Blueprint
+from api.shared.schemas import CountySchema
 from api.shared.constants import State
+from . import client_api
 
-map_blueprint = Blueprint('map', __name__)
+county_schema = CountySchema()
 
-@map_blueprint.route('/<state>')
-def get_state_map(state):
-    counties = County.objects().to_json()
-    return Response(counties, mimetype="application/json", status=200)
+@client_api.route('/counties/<region>')
+class CountiesRegion(Resource):
+    def get(region):
+        counties = County.query.all()
+        return county_schema.dump(counties)

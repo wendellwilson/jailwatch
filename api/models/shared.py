@@ -1,7 +1,5 @@
 from sqlalchemy import Column, ForeignKey, Table
-from flask_sqlalchemy import SQLAlchemy
-
-db = SQLAlchemy()
+from api import db
 
 counties_jails = Table(
     "countis_jails",
