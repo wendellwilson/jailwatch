@@ -1,5 +1,4 @@
 { "name": "Alamance County Detention Center", "location": { "type": "Point", "coordinates": [ -79.40339, 36.06844 ] } }
-{ "name": "Alamance County Detention Center", "location": { "type": "Point", "coordinates": [ -79.40339, 36.06844 ] } }
 { "name": "Albemarle District Jail", "location": { "type": "Point", "coordinates": [ -76.30674, 36.35724 ] } }
 { "name": "Anson County Jail", "location": { "type": "Point", "coordinates": [ -80.07584, 34.96702 ] } }
 { "name": "Ashe County Detention", "location": { "type": "Point", "coordinates": [ -81.46034, 36.41883 ] } }
@@ -42,7 +41,6 @@
 { "name": "Hertford County Jail", "location": { "type": "Point", "coordinates": [ -76.93494, 36.39771 ] } }
 { "name": "Iredell County Detention Center", "location": { "type": "Point", "coordinates": [ -80.88565, 35.78806 ] } }
 { "name": "Jackson County Jail", "location": { "type": "Point", "coordinates": [ -83.22629, 35.37898 ] } }
-{ "name": "Jackson County Jail", "location": { "type": "Point", "coordinates": [ -83.22629, 35.37898 ] } }
 { "name": "Jail Annex", "location": { "type": "Point", "coordinates": [ -81.54428, 35.28695 ] } }
 { "name": "Lenoir County Jail", "location": { "type": "Point", "coordinates": [ -77.5799, 35.25922 ] } }
 { "name": "Lincoln Correctional Center", "location": { "type": "Point", "coordinates": [ -81.23597, 35.48386 ] } }
@@ -65,7 +63,6 @@
 { "name": "Rutherford County Jail", "location": { "type": "Point", "coordinates": [ -81.95782, 35.3697 ] } }
 { "name": "Sampson County Jail", "location": { "type": "Point", "coordinates": [ -78.30286, 34.99249 ] } }
 { "name": "Scotland County Jail", "location": { "type": "Point", "coordinates": [ -79.45926, 34.7752 ] } }
-{ "name": "Sullivan County Jail", "location": { "type": "Point", "coordinates": [ -82.32049, 36.53642 ] } }
 { "name": "Sullivan County Jail", "location": { "type": "Point", "coordinates": [ -82.32049, 36.53642 ] } }
 { "name": "Surry County Jail", "location": { "type": "Point", "coordinates": [ -80.72252, 36.39758 ] } }
 { "name": "Transylvania County Jail", "location": { "type": "Point", "coordinates": [ -82.71355, 35.26411 ] } }

@@ -1,0 +1,117 @@
+id,name,state,location,county_id
+1,"Alamance County Detention Center","NC","POINT (36.0684255 -79.403067)",1
+2,"Albemarle District Regional Jail","NC","POINT (36.2982595 -76.2410224)",70
+3,"Alleghany County Jail","NC","POINT (36.5067397 -81.1203193)",3
+4,"Anson County Jail","NC","POINT (34.9670035 -80.0758031)",4
+5,"Ashe County Jail","NC","POINT (36.418736 -81.4600122)",5
+6,"Avery County Sherrif's Office","NC","POINT (36.0863508 -81.9268415)",6
+7,"Bertie-Martin Regional Jail","NC","POINT (35.9758214 -76.9435314)",8
+8,"Bladen Correctional Center","NC","POINT (34.6544692 -78.5185541)",9
+9,"Buncombe County Detention Facility and Annex","NC","POINT (35.5958825 -82.5477505)",11
+10,"Cabarrus Correctional Center","NC","POINT (35.3976454 -80.4125146)",13
+11,"Cabarrus County Detention Facility","NC","POINT (35.4094623 -80.5786719)",13
+12,"Cabarrus County Detention Facility Annex","NC","POINT (35.409089 -80.5792509)",13
+13,"Caldwell Correctional Center","NC","POINT (35.855488 -81.5208798)",14
+14,"Caldwell County Detention Center","NC","POINT (35.8911542 -81.5707263)",14
+15,"Carteret Correctional Center","NC","POINT (34.7817387 -76.8455295)",16
+16,"Carteret County Jail","NC","POINT (34.7194405 -76.6619671)",16
+17,"Caswell Correctional Center","NC","POINT (36.4188998 -79.3426787)",17
+18,"Caswell County Jail","NC","POINT (36.4063901 -79.3362003)",17
+19,"Catawba Correctional Center","NC","POINT (35.6158499 -81.2094726)",18
+20,"Catawba County Detention Facility","NC","POINT (35.6621624 -81.2322687)",18
+21,"Charlotte Correctional Center","NC","POINT (35.1939936 -80.9213441)",60
+22,"Cherokee County Detention Center","NC","POINT (35.1015828 -84.0284899)",20
+23,"Chowan County Jail","NC","POINT (36.060432 -76.6072016)",21
+24,"Clay County Jail","NC","POINT (35.0404964 -83.8292762)",22
+25,"Cleveland County Detention Center","NC","POINT (35.290656 -81.5354058)",23
+26,"Cleveland County Detention Center Annex","NC","POINT (35.2869273 -81.5443249)",23
+27,"Craggy Correctional Center","NC","POINT (35.6634696 -82.6152856)",11
+28,"Currituck County Detention Center","NC","POINT (36.3992271 -76.0187983)",27
+29,"Davidson Correctional Center","NC","POINT (35.8153364 -80.2319582)",30
+30,"Davie County Detention Center","NC","POINT (35.8819222 -80.5926599)",30
+31,"Duplin Correctional Center","NC","POINT (34.9451358 -77.9808211)",31
+32,"Duplin County Detention Center","NC","POINT (34.9634524 -77.9620885)",31
+33,"Durham County Jail","NC","POINT (35.9930268 -78.9006782)",32
+34,"Edgecombe County Detention Center","NC","POINT (35.9107276 -77.5889402)",33
+35,"Forsyth Correctional Center","NC","POINT (36.1446716 -80.262746)",34
+36,"Forsyth County Detention Center","NC","POINT (36.0972183 -80.2423394)",34
+37,"Fountain Correctional Center for Women","NC","POINT (35.9960519 -77.771473)",33
+38,"Franklin Correctional Center","NC","POINT (35.9458582 -78.2490761)",35
+39,"Gaston Correctional Center","NC","POINT (35.314146 -81.1942614)",36
+40,"Gaston County Jail","NC","POINT (35.2677191 -81.1838283)",36
+41,"Graham County Jail","NC","POINT (35.3223577 -83.8064935)",38
+42,"Guilford County Detention Center","NC","POINT (36.0713589 -79.7956643)",41
+43,"Halifax County Jail","NC","POINT (36.3208943 -77.5893481)",42
+44,"Harnett County Jail","NC","POINT (35.4172348 -78.8092003)",43
+45,"Haywood County Jail","NC","POINT (35.4714201 -83.005575)",44
+46,"Henderson County Detention Center","NC","POINT (35.3155212 -82.4559871)",45
+47,"High Point Detention Center","NC","POINT (35.9555287 -79.9978534)",41
+48,"Iredell County Jail","NC","POINT (35.7881719 -80.8858571)",49
+49,"Jackson County Detention Center","NC","POINT (35.3798583 -83.2251328)",50
+50,"Johnston County Jail","NC","POINT (35.5110606 -78.3474869)",51
+51,"Lee County Jail","NC","POINT (35.4674722 -79.1638983)",53
+52,"Lincoln Correctional Center","NC","POINT (35.4839533 -81.235402)",55
+53,"Lincoln County Jail","NC","POINT (35.4892201 -81.2376017)",55
+54,"Macon County Jail","NC","POINT (35.1977076 -83.3721547)",57
+55,"Madison County Jail","NC","POINT (35.8044112 -82.6530264)",58
+56,"Mecklenburg County Jail","NC","POINT (35.2205344 -80.836316)",60
+57,"Mecklenburg County Jail Annex","NC","POINT (35.3158218 -80.8420462)",60
+58,"Mecklenburg County Jail North","NC","POINT (35.3149043 -80.8457385)",60
+59,"Montgomery County Jail","NC","POINT (35.3786871 -79.8786164)",62
+60,"Moore County Detention Center","NC","POINT (35.3443034 -79.4177271)",63
+61,"Nash County Jail","NC","POINT (35.9762239 -77.9676693)",64
+62,"New Hanover Correctional Center","NC","POINT (34.2665025 -77.9228977)",65
+63,"New Hanover County Detention Facility","NC","POINT (34.3264836 -77.8955775)",65
+64,"North Piedmont Correctional Center for Women","NC","POINT (35.8130669 -80.2287479)",29
+65,"Northampton County Jail","NC","POINT (36.3892793 -77.4198379)",66
+66,"Orange Correctional Center","NC","POINT (36.0535173 -79.1018088)",68
+67,"Orange County Detention Facility","NC","POINT (36.0748168 -79.0983231)",68
+68,"Pender County Jail","NC","POINT (34.5520707 -77.9250923)",71
+69,"Pitt County Detention Center","NC","POINT (35.6422701 -77.3607424)",74
+70,"Polk County Jail","NC","POINT (35.2504833 -82.1980972)",75
+71,"Raleigh Correctional Center for Women","NC","POINT (35.7639707 -78.6239542)",92
+72,"Randolph Correctional Center","NC","POINT (35.6679887 -79.8239192)",92
+73,"Randolph County Jail","NC","POINT (35.6667296 -79.831845)",76
+74,"Robeson Correctional Center","NC","POINT (34.6244965 -79.0741649)",78
+75,"Robeson County Jail","NC","POINT (34.5856788 -79.0521598)",78
+76,"Rowan Correctional Center","NC","POINT (35.6213019 -80.5340029)",80
+77,"Rowan County Jail","NC","POINT (35.6694191 -80.4684739)",80
+78,"Rutherford Correctional Center","NC","POINT (35.3657012 -81.9150113)",81
+79,"Rutherford County Detention Center","NC","POINT (35.3697154 -81.9578452)",81
+80,"Sampson County Jail","NC","POINT (34.992394 -78.3024238)",82
+81,"Sanford Correctional Center","NC","POINT (35.4728518 -79.1593704)",53
+82,"Scotland Correctional Instutition","NC","POINT (34.8114875 -79.364102)",83
+83,"Stanly County Detention Center","NC","POINT (35.3488461 -80.1968206)",84
+84,"Stokes County Jail","NC","POINT (36.4141324 -80.2166143)",85
+85,"Swannanoa Correctional Center for Women","NC","POINT (35.6108545 -82.3735998)",11
+86,"Tillery Correctional Center","NC","POINT (36.2912069 -77.4625103)",42
+87,"Union County Jail","NC","POINT (34.9786781 -80.465712)",90
+88,"Vance County Jail","NC","POINT (36.3306726 -78.4071412)",91
+89,"Wake Correctional Center","NC","POINT (35.7659217 -78.6171569)",92
+90,"Wake County Detention Center and Annex","NC","POINT (35.733956 -78.6397417)",92
+91,"Warren County Jail","NC","POINT (36.3931028 -78.1354756)",93
+92,"Watauga County Jail","NC","POINT (36.2208889 -81.7068633)",95
+93,"Wayne Correctional Center","NC","POINT (35.3852575 -78.0354221)",96
+94,"Wayne County Detention Center","NC","POINT (35.3811623 -77.9946805)",96
+95,"Wilkes Correctional Center","NC","POINT (36.1646843 -81.1320994)",97
+96,"Wilkes County Detention Center","NC","POINT (36.1412597 -81.1496602)",97
+97,"Wilkes County Detention Center for Women","NC","POINT (36.1731458 -81.1384248)",97
+98,"Wilson County Jail","NC","POINT (35.7260752 -77.9097552)",98
+99,"Yadkin County Jail","NC","POINT (36.135302 -80.658222)",99
+100,"Yancey County Jail","NC","POINT (35.9168049 -82.2984073)",100
+101,"Chatham County Detention Center","NC","POINT (35.74089 -79.26527)",19
+102,"Durham Correctional Center","NC","POINT (36.06545 -78.92554)",32
+103,"Rockingham County Jail","NC","POINT (36.38575 -79.74752)",79
+104,"Beaufort County Jailer","NC","POINT (35.54378 -77.05484)",7
+105,"Craven County Jail","NC","POINT (35.13286 -77.18294)",25
+106,"Cumberland County Jail","NC","POINT (35.04984 -78.8804)",26
+107,"Columbus County Detention Center","NC","POINT (34.33673 -78.71919)",24
+108,"Dare County Detention Center","NC","POINT (35.91827 -75.69005)",28
+109,"Granville County Jail","NC","POINT (36.31249 -78.58786)",39
+110,"Hertford County Jail","NC","POINT (36.39771 -76.93494)",46
+111,"Lenoir County Jail","NC","POINT (35.25922 -77.5799)",54
+112,"McDowell County Jail","NC","POINT (35.6639 -82.0313)",56
+113,"Onslow County Jail","NC","POINT (34.7517 -77.4312)",67
+115,"Surry County Jail","NC","POINT (36.39758 -80.72252)",86
+116,"Transylvania County Jail","NC","POINT (35.26411 -82.71355)",88
+117,"Washington County Detention","NC","POINT (35.86693 -76.74872)",94
