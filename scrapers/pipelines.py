@@ -35,7 +35,12 @@ class MongoDBPipeline:
         self.client.close()
 
     def process_item(self, item, spider):
-        ## how to handle each post
+        ## how to handle each item
+
+        ## write to db
+
+        ## add to queue
+
         self.db[self.mongo_col].insert(dict(item))
         logging.debug("Post added to MongoDB")
         return item

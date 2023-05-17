@@ -1,6 +1,6 @@
 import scrapy
 from scrapy.loader import ItemLoader
-from scraper import items
+from scrapers import items
 import json
 
 

@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 import scrapy
 from scrapy.loader import ItemLoader
-from scraper.items import Inmate, Charge
-from scraper import items
+from scrapers.items import Inmate, Charge
+from scrapers import items
 
 HEADER_STRING = "Date Charged"
 
