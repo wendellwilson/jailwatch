@@ -1,7 +1,7 @@
 from flask_restx import Resource, Namespace
 
 from api.models import Inmate
-from api.shared.schemas import InmateSchema
+from api.models.schemas import InmateSchema
 
 inmate_schema = InmateSchema()
 inmate_ns = Namespace('inmate')

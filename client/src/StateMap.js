@@ -1,14 +1,17 @@
 import React, { useState, useEffect } from "react"
 import { geoAlbers, geoPath } from "d3-geo"
+import Api from "./helper/api";
 
 const projection = geoAlbers().rotate([0, 62, 0]).scale(7000).center([-79, 36]).translate([3850,3100]);
 
 const StateMap = () => {
    const [geographies, setGeographies] = useState([])
    const [markers, setMarkers] = useState([])
+   const api = new Api();
 
    useEffect(() => {
-    fetch("/map/nc")
+    api
+      .getCountiesList
       .then(response => {
         if (response.status !== 200) {
           console.log(`There was a problem: ${response.status}`)
@@ -18,7 +21,8 @@ const StateMap = () => {
           setGeographies(statedata)
         })
       })
-    fetch("/jails/nc")
+    api
+      .getJailsList
       .then(response => {
         if (response.status !== 200) {
           console.log(`There was a problem: ${response.status}`)

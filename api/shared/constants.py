@@ -11,7 +11,7 @@ ABBREV_TO_GENDER = {
     'O': 'Other',
 }
 
-class Race(Enum):
+class Race(str, Enum):
     BLACK = 'B'
     WHITE = 'W'
     NATIVE = 'N'
@@ -27,7 +27,7 @@ ABBREV_TO_RACE = {
     'I': 'Native Hawaiian and Other Pacific Islander',
     'O': 'Other',
 }
-class State(Enum):
+class State(str, Enum):
     AK = 'AK'
     AZ = 'AZ'
     AR = 'AR'

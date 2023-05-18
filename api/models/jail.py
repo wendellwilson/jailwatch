@@ -22,4 +22,4 @@ class Jail(db.Model):
     # )
 
     def __repr__(self) -> str:
-        return f'Jail(id={self.id!r}, name={self.name!r}, short_name={self.short_name!r})'
+        return f'Jail(id={self.id!r}, name={self.name!r}), location={self.location}'

@@ -9,8 +9,8 @@ def create_app(config_name='dev'):
 
     app.config.from_object(config_by_name[config_name])
 
-    app.register_blueprint(client_blueprint)
-    app.register_blueprint(worker_blueprint)
+    app.register_blueprint(client_blueprint, url_prefix="/api")
+    app.register_blueprint(worker_blueprint, url_prefix="/worker/api")
     
     db.init_app(app)
     ma.init_app(app)

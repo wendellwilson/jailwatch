@@ -1,7 +1,7 @@
 from flask_restx import Resource, Namespace
 
 from api.models import Charge
-from api.shared.schemas import ChargeSchema
+from api.models.schemas import ChargeSchema
 
 charge_schema = ChargeSchema()
 charge_ns = Namespace('charge')
