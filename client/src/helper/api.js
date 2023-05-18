@@ -1,5 +1,4 @@
 import * as axios from "axios";
-import { getCookie } from "./utils";
 
 export default class Api {
   constructor() {
@@ -9,7 +8,7 @@ export default class Api {
   }
 
   init = () => {
-    this.api_token = getCookie("ACCESS_TOKEN");
+    this.api_token = "";
 
     let headers = {
       Accept: "application/json",
@@ -33,6 +32,6 @@ export default class Api {
   };
 
   getJailsList = (state) => {
-    return this.init().post("/users", state);
+    return this.init().post("/jails", state);
   };
 }
