@@ -1,49 +1,53 @@
 import React, { useState, useEffect } from "react"
+// import { ComposableMap, Geographies, Geography, Marker } from "react-simple-maps"
 import { geoAlbers, geoPath } from "d3-geo"
 import Api from "./helper/api";
 
-const projection = geoAlbers().rotate([0, 62, 0]).scale(7000).center([-79, 36]).translate([3850,3100]);
+
 
 const StateMap = () => {
-   const [geographies, setGeographies] = useState([])
+   const [regions, setRegions] = useState([])
    const [markers, setMarkers] = useState([])
-   const api = new Api();
 
    useEffect(() => {
+    const api = new Api();
     api
-      .getCountiesList
+      .getCountiesList("NC")
       .then(response => {
         if (response.status !== 200) {
           console.log(`There was a problem: ${response.status}`)
           return
         }
-        response.json().then(statedata => {
-          setGeographies(statedata)
-        })
+        setRegions(response.data)
       })
     api
-      .getJailsList
+      .getJailsList("NC")
       .then(response => {
         if (response.status !== 200) {
           console.log(`There was a problem: ${response.status}`)
           return
         }
-        response.json().then(jaildata => {
-          setMarkers(jaildata)
-        })
+          setMarkers(response.data)
       })
    }, [])
 
+  if (!regions || !markers) {
+    return <div>Loading...</div>;
+  }
+
+  const projection = geoAlbers().rotate([0, 62, 0]).scale(7200).center([-79, 36]).translate([3980,3150]);
+  // const projection = geoAlbersUsa();
+
   return (
-    <svg width={ 900 } height={ 450 } viewBox="0 0 900 450">
+    <svg width={ 960 } height={ 600 }>
       <g className="counties">
         {
-          geographies.map((d,i) => (
+          regions.map((d,i) => (
             <path
               key={ `path-${ i }` }
               d={ geoPath().projection(projection)(d.geometry) }
               className="county"
-              fill={ `rgba(38,50,56,${ 1 / geographies.length * i})` }
+              fill={ `rgba(38,50,56,${ 1 / regions.length * i})` }
               name={d.name}
               stroke="#FFFFFF"
               strokeWidth={ 0.5 }
@@ -60,14 +64,13 @@ const StateMap = () => {
               cy={ projection(jail.location.coordinates)[1] }
               r={ 2 }
               fill="#E91E63"
-              stroke="#FFFFFF"
               className="marker"
             />
           ))
         }
       </g>
     </svg>
-  )
-}
+  );
+};
 
 export default StateMap

@@ -27,3 +27,4 @@ db.create_all()
 exit()
 ```
 * load in county and jail data
+use pgadmin import

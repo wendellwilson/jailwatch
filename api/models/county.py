@@ -12,7 +12,7 @@ class County(db.Model):
     name = Column(String)
     abbreviation = Column(String)
     state = Column(Enum(State))
-    geometry = Column(Geometry('POLYGON'))
+    geometry = Column(Geometry('MULTIPOLYGON'))
     located_jails = db.relationship('Jail', back_populates='located_county')
     # associated_jails = db.relationship(
     #     'Jail', secondary=counties_jails, back_populates='associated_counties'

@@ -1,11 +1,12 @@
 from flask import Flask
-
+from flask_cors import CORS
 from api.client_api import client_blueprint
 from api.worker_api import worker_blueprint
 from . import config_by_name, db, ma
 
 def create_app(config_name='dev'):
     app = Flask(__name__)
+    CORS(app)
 
     app.config.from_object(config_by_name[config_name])
 

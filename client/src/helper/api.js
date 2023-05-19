@@ -4,7 +4,7 @@ export default class Api {
   constructor() {
     this.api_token = null;
     this.client = null;
-    this.api_url = process.env.CLIENT_API_ENDPOINT;
+    this.api_url = process.env.REACT_APP_API_ENDPOINT;
   }
 
   init = () => {
@@ -28,10 +28,10 @@ export default class Api {
   };
 
   getCountiesList = (state) => {
-    return this.init().get("/counties", state);
+    return this.init().get(`/counties/${state}`);
   };
 
   getJailsList = (state) => {
-    return this.init().post("/jails", state);
+    return this.init().get(`/jails/${state}`);
   };
 }

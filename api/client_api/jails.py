@@ -14,4 +14,4 @@ class JailsRegion(Resource):
             jails = Jail.query.filter(Jail.state == State(region))
         except:
             return f'{region} is not a valid state', 400
-        return jail_schema.dumps(jails)
+        return jail_schema.dump(jails)
