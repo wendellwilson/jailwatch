@@ -15,4 +15,4 @@ class CountiesRegion(Resource):
             counties = County.query.filter(County.state == State(region))
         except:
             return f'{region} is not a valid state', 400
-        return county_schema.dump(counties)
+        return county_schema.dump(counties), 200
