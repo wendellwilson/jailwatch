@@ -2,8 +2,9 @@ from sqlalchemy import Column, Integer, String, Enum, Date, ForeignKey
 from sqlalchemy.orm import class_mapper, ColumnProperty
 from api.shared.constants import Gender, Race
 from api import db
+from .shared import AuditableModel
 
-class Inmate(db.Model):
+class Inmate(AuditableModel):
     __tablename__ = 'inmates'
 
     UNIQUE_ATTR = [
@@ -17,7 +18,7 @@ class Inmate(db.Model):
 
     id = Column(Integer, primary_key=True)
     first_name = Column(String)
-    middle_name = Column(Date)
+    middle_name = Column(String)
     last_name = Column(String)
     book_id = Column(String)
     charges = db.relationship(
@@ -26,6 +27,8 @@ class Inmate(db.Model):
     race = Column(Enum(Race))
     gender = Column(Enum(Gender))
     date_of_birth = Column(Date)
+    #Last time a scraper saw a record for this inmate
+    last_seen = Column(Date)
     #TODO Maybe we need a duplicate prevention flag of some sort
     #TODO We should have a duplicates reference
 
@@ -41,10 +44,12 @@ class Inmate(db.Model):
     def update(self, new_data):
         #TODO create a tag to check correctness when we mismatch values here
         updated = False
+        #TODO always update last scraped if more recent
         for attr in self.__table__.columns.keys():
             if attr in new_data and not getattr(self, attr):
                 setattr(self, attr, new_data[attr])
                 updated = True
+        #TODO check charges
         return updated
 
     def __repr__(self) -> str:
@@ -65,6 +70,8 @@ class Charge(db.Model):
     agency = Column(String)
     description = Column(String)
     inmate_id = Column(Integer, ForeignKey('inmates.id'))
+    #Last time a scraper saw a record for this charge
+    last_seen = Column(Date)
     inmate = db.relationship('Inmate', back_populates='charges')
 
     def __repr__(self) -> str:

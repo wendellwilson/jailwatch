@@ -27,6 +27,7 @@ KEY_AGENCY = "agency"
 KEY_DESC = "desc"
 KEY_STATE = "state"
 KEY_COUNTY = "county"
+KEY_LAST_SEEN = "last_seen"
 
 KEY_BOOK_ID = "book_id"
 KEY_OFFENDER_ID = "offender_id" # Durham and Vine ID
@@ -57,3 +58,4 @@ class Inmate(scrapy.Item):
     date_of_birth = scrapy.Field()
     state = scrapy.Field()
     county = scrapy.Field()
+    last_seen = scrapy.Field()

@@ -64,10 +64,8 @@ ROBOTSTXT_OBEY = True
 
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
-ITEM_PIPELINES = {'inmatescraper.pipelines.MongoDBPipeline': 200}
-MONGODB_URI = "localhost:27017"
-MONGODB_DB = "jailwatch"
-MONGODB_COLLECTION = "scraped_inmates"
+ITEM_PIPELINES = {'inmatescraper.pipelines.WorkerAPIPipeline': 200}
+API_URL = "localhost:27017"
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://doc.scrapy.org/en/latest/topics/autothrottle.html
 AUTOTHROTTLE_ENABLED = True

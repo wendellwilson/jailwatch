@@ -3,9 +3,9 @@ import scrapy
 from scrapy.loader import ItemLoader
 from scrapers.items import Inmate, Charge
 from scrapers import items
+from datetime import datetime
 
 HEADER_STRING = "Date Charged"
-
 
 class DurhamSpider(scrapy.Spider):
     name = 'durham'
@@ -22,6 +22,7 @@ class DurhamSpider(scrapy.Spider):
                inmate_loader = ItemLoader(Inmate())
                inmate_loader.add_value(items.KEY_NAME, inmate_data.css('a::text').extract())
                inmate = inmate_loader.load_item()
+               inmate[items.LAST_SEEN] = datetime.now()
                inmate[items.KEY_CHARGES] = []
             else:
                 charge_loader = ItemLoader(Charge())

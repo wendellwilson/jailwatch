@@ -15,8 +15,9 @@ class Inmate(Resource):
             update = True
             #check if inmate exists
             matching_inmates = Inmate.query.filter(**inmate.get_unique_attrs()).all()
+            #check for duplicate
             if matching_inmates.length > 1:
-                #TODO this should createa a dedup task
+                #TODO this should create a dedup task
                 return "multiple inmates matching found", 500
             elif matching_inmates.length == 1:
                 #TODO do we need some kind of trusted source or data stamp to provide info preference

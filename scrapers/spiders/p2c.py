@@ -2,6 +2,7 @@ import scrapy
 from scrapy.loader import ItemLoader
 from scrapers import items
 import json
+from datetime import datetime
 
 
 class P2CSpider(scrapy.Spider):
@@ -53,6 +54,7 @@ class P2CSpider(scrapy.Spider):
                 inmate_loader.add_value(key, value)
 
             inmate = inmate_loader.load_item()
+            inmate[items.LAST_SEEN] = datetime.now()
             inmate[items.KEY_CHARGES] = []
             charge_loader = ItemLoader(items.Charge())
 
